@@ -1,6 +1,7 @@
 from git import Repo,remote
 
 rw_dir = 'C:\\Users\\IEUser\\Desktop\\msf_venom'
+COMMIT_MESSAGE = input("please enter a commit msg")
 COMMIT_MESSAGE = 'comment from python script'
 repo = Repo(rw_dir)
 
