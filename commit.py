@@ -1,6 +1,6 @@
 from git import Repo,remote
 
-rw_dir = '/home/mrhackit/Desktop/msf_venom'
+rw_dir = 'C:\\Users\\IEUser\\Desktop\\msf_venom'
 COMMIT_MESSAGE = 'comment from python script'
 repo = Repo(rw_dir)
 
