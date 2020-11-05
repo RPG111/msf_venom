@@ -1,16 +1,23 @@
-from git import Repo
+from git import Repo,remote
 
-PATH_OF_GIT_REPO = r'https://github.com/MrHackIT/msf_venom.git'
+rw_dir = '/home/mrhackit/Desktop/msf_venom'
 COMMIT_MESSAGE = 'comment from python script'
+repo = Repo(rw_dir)
+
 
 def git_push():
-    try:
-        repo = Repo(PATH_OF_GIT_REPO)
-        repo.git.add(update=True)
-        repo.index.commit(COMMIT_MESSAGE)
-        origin = repo.remote(name='origin')
-        origin.push()
-    except:
-        print('Some error occured while pushing the code')    
+	try:
+		repo.git.add(update=True)
+		repo.index.commit(COMMIT_MESSAGE)
+		origin = repo.remote(name='origin')
+		origin.push()
+	except:
+		print('Blah Blah ')
+
 
 git_push()
+
+
+
+
+
